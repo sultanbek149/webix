@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Geologica", system-ui, sans-serif;
+    font-weight: 300;
+  }
+}
+
+.products .item {
+  @apply cursor-pointer;
+}
+
+.products .item .title {
+  @apply text-lg md:text-base mt-3 md:mt-5;
+}
+
+.price {
+  @apply mt-1 text-lg md:text-base lg:text-lg space-x-2;
+}
+
+.price .main {
+  @apply font-medium;
+}
+
+.price .sub,
+.cart .sub {
+  @apply line-through decoration-1;
+  color: hsla(0, 0%, 10%, 0.5);
+}
+
+.products .item img {
+  @apply w-full;
+}
+
+.products .item .btn {
+  @apply mt-3 md:mt-4;
+}
+
+.btn-primary {
+  @apply block py-4 text-center text-lg bg-brightGrey transition group-hover:bg-brightGreen group-hover:text-white;
+}
+
+.products .btn-primary {
+  @apply text-base md:text-lg py-3 lg:py-4;
+}
+
+.check__input:checked + .check__box {
+  background-color: #3b82f6;
+  background-image: url("/img/done1.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+}
+
+.sort .item {
+  @apply px-3 py-3 md:py-4 md:px-4 bg-brightGrey hover:bg-brightGreen hover:text-white transition cursor-pointer;
+}
+
+.menu {
+  transition-timing-function: cubic-bezier(0.52, 0.16, 0.04, 1);
+}
+
+.menu.active {
+  @apply translate-y-0;
+}
+
+#hamburger svg.open > g:first-of-type {
+  transform: translate(0, 0) rotate(45deg skewX(0) skewY(0) scaleX(0) scaleY(0));
+}
+
+#hamburger svg.open g {
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1) 0.2s;
+}

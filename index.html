@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/ico.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>WEBIX</title>
+</head>
+
+<body class="px-5">
+    <nav class="max-md:fixed max-md:inset-x-0 container py-6 mx-auto max-md:bg-white max-md:top-0 z-20">
+        <div class="relative flex items-center justify-center md:justify-between">
+            <button class="md:hidden absolute px-5 left-0 top-1" id="hamburger">
+                <div class="tham tham-e-squeeze tham-w-7">
+                    <div class="tham-box">
+                        <div class="tham-inner" />
+                    </div>
+                </div>
+            </button>
+
+            <a href="index.html"><img src="img/Webix.svg" alt="logo" id="logo" onclick="toggle" /></a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="categories.html">Финансы</a>
+                <a href="categories.html">Утилиты</a>
+                <a href="categories.html">Здоровье</a>
+                <a href="categories.html">Игры</a>
+                <a href="categories.html">Социальные сети</a>
+                <a href="categories.html">Путешествия</a>
+            </div>
+
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="about.html">О нас</a>
+                <a href="#" class="btn bg-brightGrey py-4 px-6">7 (701) 234 56 78</a>
+            </div>
+
+            <div class="line absolute inset-x-5 sm:inset-x-0 -bottom-6 mx-auto border-b border-b-lineColor z-10"></div>
+
+        </div>
+
+    </nav>
+
+
+    <nav id="mobile"
+        class="menu container mx-auto px-5 bg-white flex flex-col justify-between pb-10 overflow-hidden fixed max-md:inset-x-0 pt-16 top-0 bottom-0 z-10 transition-transform duration-700 -translate-y-full">
+        <div class="links flex flex-col mt-4 font-medium text-2xl *:py-3 *:border-b *border-b-lineColor">
+            <a href="categories.html">Финансы</a>
+            <a href="categories.html">Утилиты</a>
+            <a href="categories.html">Здоровье</a>
+            <a href="categories.html">Игры</a>
+            <a href="categories.html">Социальные сети</a>
+            <a href="categories.html">Путешествия</a>
+            <a href="about.html">О нас</a>
+        </div>
+
+        <div class="menu-footer">
+            <div class="flex flex-col items-start gap-3">
+
+                <a href="mailto:webix.office@gmail.com" class="text-2xl xl:text-3xl font-medium max-lg:mt-1">
+                    webix.office@gmail.com
+                </a>
+
+                <a href="tel:+77253849106" class="text-2xl xl:text-3xl font-medium">
+                    7 (725) 384-9106
+                </a>
+
+                <div class="socials flex space-x-3">
+                    <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/tg.svg" alt="social"></a>
+                    <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/ig.svg" alt="social"></a>
+                    <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/wp.svg" alt="social"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero" class="mt-24 md:mt-6">
+        <div
+            class="container flex flex-col-reverse md:flex-row md:h-[420px] items-stretch justify-between mx-auto pb-8 border-b border-b-lineColor gap-y-5">
+            <div class="flex flex-col md:w-[42%] h-full p-6 bg-brightGrey">
+                <h1 class="text-2xl md:text-3xl font-medium">Оптимальные решения для финансовых сайтов</h1>
+                <h2 class="text-base md:text-lg mt-3">
+                    Выберите готовый сайт для финансового бизнеса. Современные и
+                    профессиональные шаблоны для бухгалтерии, инвестиций и других услуг
+                </h2>
+
+
+                <a href="categories.html"
+                    class="btn block mt-10 md:mt-auto py-3 md:py-4 text-center text-lg text-white bg-brightGreen">
+                    Посмотреть
+                </a>
+            </div>
+            <div class="relative md:w-[53%]">
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/hero-mobile.png">
+                    <img class="w-full h-full" src="./img/hero-wide.png" alt="hero">
+                </picture>
+
+                <div class="absolute dots flex bottom-4 z-10 gap-2 left-1/2 -translate-x-1/2">
+                    <div class="w-2 h-2 rounded-full bg-white opacity-100"></div>
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="templates" class="mt-0 md:mt-16">
+        <div class="container relative mx-auto space-y-6 py-7 md:pb-6 border-b border-b-lineColor">
+            <div class="head flex items-center justify-between">
+                <h3 class="text-2xl md:text-3xl font-medium">Шаблоны для здоровья и медицины</h3>
+
+                <a href="#" class="hidden sm:inline btn py-4 px-6 text-center text-base bg-brightGrey">Смотреть все</a>
+            </div>
+
+            <div class="products grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+                <a href="cart.html" class="item group">
+                    <img src="./img/itemOrange.png" alt="orange">
+
+                    <p class="title">Медицинский Центр Профи</p>
+
+                    <div class="price flex">
+                        <p class="main">
+                            400 000 ₸
+                        </p>
+                        <p class="sub">
+                            600 000 ₸
+                        </p>
+                    </div>
+
+
+                    <div class="btn btn-primary">Купить</div>
+                </a>
+                <a href="cart.html" class="item group">
+                    <img src="./img/fitness.png" alt="orange">
+
+                    <p class="title">Фитнес Решения</p>
+
+                    <div class="price">
+                        <p class="main">
+                            280 500 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <div class="btn btn-primary">Купить</div>
+                </a>
+
+                <a href="cart.html" class="item group">
+                    <img src="./img/health.png" alt="orange">
+
+                    <p class="title">Здоровье Онлайн</p>
+
+                    <div class="price">
+                        <p class="main">
+                            350 000 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <div class="btn btn-primary">Купить</div>
+                </a>
+
+                <a href="cart.html" class="item group">
+                    <img src="./img/clinic.png" alt="orange">
+
+                    <p class="title">Клиника Ваше Здоровье</p>
+
+                    <div class="price">
+                        <p class="main">
+                            320 200 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <div class="btn btn-primary">Купить</div>
+                </a>
+            </div>
+
+            <a href="#" class="block w-fit mx-auto sm:hidden btn py-3 px-7 text-center text-base bg-brightGrey">Смотреть все</a>
+        </div>
+
+
+    <section id="greetings" class="section mt-4 md:mt-10">
+        <div
+            class="container relative after:absolute after:-bottom-6 after:inset-x-0 after:border-b after:border-b-lineColor mx-auto space-y-4 md:space-y-8 md:p-8 md:bg-brightGrey">
+
+            <h4 class="text-3xl md:text-5xl font-medium mb-4 md:mb-6">Знакомьтесь с нами</h4>
+
+            <picture>
+                <source media="(max-width: 1024px)" srcset="./img/banner-mobile.png" />
+                <img class="max-sm:w-full" src="./img/banner-wide.png" alt="banner">
+            </picture>
+
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:text-lg">
+                <p>
+                    Мы — ведущий цифровой магазин, специализирующийся на продаже готовых сайтов. Наша миссия —
+                    предоставить вам
+                    качественные, профессионально разработанные решения, которые помогут вашему бизнесу выделиться
+                    онлайн.
+                </p>
+                <p>
+                    Мы предлагаем широкий выбор шаблонов для различных ниш и целей, от корпоративных сайтов до
+                    интернет-магазинов. Наша
+                    команда постоянно обновляет и улучшает наши предложения, чтобы соответствовать самым современным
+                    требованиям и трендам.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="games" class="mt-10 md:mt-16">
+        <div class="container relative mx-auto space-y-6 pb-6 border-b border-b-lineColor">
+            <div class="head flex items-center justify-between">
+                <h3 class="text-2xl md:text-3xl font-medium">Сайты для игровых проектов</h3>
+
+                <a href="#" class="hidden sm:inline btn py-4 px-6 text-center text-base bg-brightGrey">Смотреть все</a>
+            </div>
+
+            <div class="products grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+                <a href="cart.html" class="item group">
+                    <img src="./img/quests.png" alt="orange">
+
+                    <p class="title">Квестовые Галактики</p>
+
+                    <div class="price flex">
+                        <p class="main">
+                            420 000 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <a href="#" class="btn btn-primary">Купить</a>
+                </a>
+
+                <a href="cart.html" class="item group">
+                    <img src="./img/avangard.png" alt="orange">
+
+                    <p class="title">Авангард Игровых Миров</p>
+
+                    <div class="price">
+                        <p class="main">
+                            280 500 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <a href="#" class="btn btn-primary">Купить</a>
+                </a>
+
+                <a href="cart.html" class="item group">
+                    <img src="./img/virtual.png" alt="orange">
+
+                    <p class="title">Виртуальный Пейзаж</p>
+
+                    <div class="price">
+                        <p class="main">
+                            350 000 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <a href="#" class="btn btn-primary">Купить</a>
+                </a>
+
+                <a href="cart.html" class="item group">
+                    <img src="./img/epic.png" alt="orange">
+
+                    <p class="title">Эпическая Арена</p>
+
+                    <div class="price">
+                        <p class="main">
+                            320 200 ₸
+                        </p>
+                        <p class="sub"></p>
+                    </div>
+
+
+                    <a href="#" class="btn btn-primary">Купить</a>
+                </a>
+            </div>
+
+            <a href="#" class="block w-max sm:hidden mt-4 btn py-4 px-6 mx-auto text-base bg-brightGrey">Смотреть
+                все</a>
+        </div>
+    </section>
+
+    <section id="forms" class="mt-6 lg:mt-16">
+        <div class="container relative mx-auto flex gap-8 xl:gap-16 justify-between pb-7 border-b border-b-lineColor">
+            <form class="md:w-5/12 lg:4/12">
+                <h5 class="text-3xl font-medium mb-2 lg:mb-3">Ваши мысли, наш ответ</h5>
+
+                <p class="text-xl mb-5">
+                    Ваше мнение важно для нас! Оставьте вопросы или предложения, и мы свяжемся с вами как можно скорее,
+                    чтобы помочь вам
+                </p>
+
+                <div class="space-y-4">
+                    <input class="block w-full py-4 px-6 placeholder:text-black bg-brightGrey" type="text"
+                        placeholder="*ФИО">
+                    <input class="block w-full py-4 px-6 placeholder:text-black bg-brightGrey" type="tel"
+                        placeholder="*Телефон">
+                    <input class="block w-full py-4 px-6 placeholder:text-black bg-brightGrey" type="email"
+                        placeholder="*Email">
+                    <textarea class="block w-full py-4 px-6 placeholder:text-black bg-brightGrey resize-none" rows="4"
+                        placeholder="Комментарий"></textarea>
+
+                    <label class="relative check block mb-2 ps-7">
+                        <input type="checkbox" class="check__input absolute appearance-none">
+                        <span
+                            class="check__box absolute -ms-7 top-[1.75px] w-5 h-5 cursor-pointer bg-brightGrey rounded-md"></span>
+                        Нажимая «Отправить», вы соглашаетесь с нашими Политикой
+                        конфиденциальности
+                    </label>
+
+                    <button
+                        class="btn btn-primary w-full text-[#4d4d4d] bg-brightGrey hover:bg-brightGreen hover:text-white">Отправить</button>
+                </div>
+            </form>
+
+            <div class="relative max-md:hidden md:w-7/12 lg:w-7/12">
+                <picture>
+                    <img class="w-full h-full" src="./img/form-wide.png" alt="form">
+                </picture>
+
+                <p class="absolute inset-x-7 bottom-7 text-xl text-white font-medium">
+                    Мы стремимся обеспечить наилучший опыт работы с нашим магазином и готовы помочь вам в решении любых
+                    вопросов
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer" class="mt-7">
+        <div
+            class="container relative mx-auto flex max-md:flex-col items-start max-md:gap-3 md:items-center justify-between md:px-7 md:py-10 md:bg-brightGrey">
+            <img src="./img/Webix.svg" class="w-36 lg:w-[190px]" alt="logo">
+
+            <a href="mailto:webix.office@gmail.com" class="text-2xl xl:text-3xl font-medium max-lg:mt-1">
+                webix.office@gmail.com
+            </a>
+
+            <a href="tel:+77253849106" class="text-2xl xl:text-3xl font-medium">
+                7 (725) 384-9106
+            </a>
+
+            <div class="socials flex space-x-3">
+                <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/tg.svg" alt="social"></a>
+                <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/ig.svg" alt="social"></a>
+                <a href="#" class="bg-black block p-2 lg:p-3"><img src="./img/wp.svg" alt="social"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="offer" class="mt-5 mb-7">
+        <div class="container relative mx-auto flex max-md:flex-col gap-y-2 items-center justify-between">
+            <p class="text-base max-md:order-last max-md:text-center">
+                © Copyright 2024 Webix. Все права защищены.
+            </p>
+
+            <div class="flex max-md:flex-col max-md:text-center md:space-x-5 gap-y-2">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Публичная Оферта</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const hm = document.querySelector('#hamburger')
+
+        function toggle() {
+            document.querySelector('#mobile').classList.toggle('active')
+            hm.querySelector('.tham').classList.toggle('tham-active')
+            document.querySelector('body').classList.toggle('overflow-hidden')
+            console.log('Toggle Mobile')
+        }
+
+        hm.addEventListener('click', toggle)
+
+    </script>
+
+
+    <!-- 
+    <div style="font-size: 3vw" class="mt-20" id="data"></div>
+
+    <script>
+        function updateText() {
+            // const div = document.createElement("div");
+            // div.textContent = `Ratio: ${window.devicePixelRatio}`
+            // document.querySelector('body').appendChild(div)
+            const data = document.querySelector('#data')
+            if (data) console.log('fasdfads')
+            data.textContent = `Width: ${window.innerWidth}, Ratio: ${window.devicePixelRatio}`
+        }
+
+        window.addEventListener("resize", updateText)
+        updateText()
+
+    </script> -->
+</body>
+
+</html>
